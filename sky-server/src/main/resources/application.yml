@@ -53,3 +53,7 @@ sky:
   wechat:
     appid: ${sky.wechat.appid}
     secret: ${sky.wechat.secret}
+  shop:
+    address: 广东省南山区粤海街道深圳大学沧海校区东北门
+  baidu:
+    ak: egQTxFZ0s2wbhPig55oA0sUCzXTbcXUP
