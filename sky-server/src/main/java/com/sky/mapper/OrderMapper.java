@@ -56,4 +56,7 @@ public interface OrderMapper {
 
     @Select("select * from orders where status = #{status} and order_time < #{orderTime}")
     List<Orders> getByStatusAndOrderTimeLT(Integer status, LocalDateTime orderTime);
+
+    @Select("select sum(amount) from orders where status = #{status} and (order_time between #{begin} and #{end})")
+    Double getTurnover(LocalDateTime begin, LocalDateTime end, Integer status);
 }
